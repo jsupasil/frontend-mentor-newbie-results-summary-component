@@ -1,47 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Results summary component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Results summary component</title>
 
-  Your Result
-  76
-  of 100
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              lightRed: "hsl(0, 100%, 67%)",
+              orangeyYellow: "hsl(39, 100%, 56%)",
+              greenTeal: "hsl(166, 100%, 37%)",
+              cobaltBlue: "hsl(234, 85%, 45%)",
+              lightSlateBlue: "hsl(252, 100%, 67%)",
+              lightRoyalBlue: "hsl(241, 81%, 54%)",
+              violetBlue: "hsla(256, 72%, 46%, 1)",
+              persianBlue: "hsla(241, 72%, 46%, 0)",
+              white: "hsl(0, 0%, 100%)",
+              paleBlue: "hsl(221, 100%, 96%)",
+              lightLavender: "hsl(241, 100%, 89%)",
+              darkGrayBlue: "hsl(224, 30%, 27%)",
+            },
+            fontFamily: {
+              hankenGrotesk: ["Hanken Grotesk"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="card">
+        <div class="result-overall">
+          <h1>Your Result</h1>
+          <div class="overall-score-circle">
+            <p>76</p>
+            <p>of 100</p>
+          </div>
+          <h2 class="result-level">Great</h2>
+          <p class="result-context">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
+        <div class="result-summary">
+          <h3>Summary</h3>
+          <ul class="result-bar">
+            <il class="reaction">
+              <div>
+                <img
+                  src="./assets/images/icon-reaction.svg"
+                  alt="reaction icon"
+                />
+                <p>Reaction</p>
+              </div>
+              <p>80 / 100</p>
+            </il>
+            <il class="memory">
+              <div>
+                <img src="./assets/images/icon-memory.svg" alt="memory icon" />
+                <p>Memory</p>
+              </div>
+              <p>92 / 100</p>
+            </il>
+            <il class="verbal">
+              <div>
+                <img src="./assets/images/icon-verbal.svg" alt="verbal icon" />
+                <p>Memory</p>
+              </div>
+              <p>61 / 100</p>
+            </il>
+            <il class="visual">
+              <div>
+                <img src="./assets/images/icon-verbal.svg" alt="visual icon" />
+                <p>Visual</p>
+              </div>
+              <p>72 / 100</p>
+            </il>
+          </ul>
+        </div>
+        <button class="button">Continue</button>
+      </div>
+    </main>
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </footer>
+  </body>
 </html>
