@@ -23,8 +23,8 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
 ### Links
 
-- Solution URL: [GitHub](https://github.com/jsupasil/frontend-mentor-newbie-recipe-page)
-- Live Site URL: [Vercel](https://frontend-mentor-newbie-recipe-page.vercel.app/)
+- Solution URL: [GitHub](https://github.com/jsupasil/frontend-mentor-newbie-results-summary-component)
+- Live Site URL: [Vercel](https://frontend-mentor-newbie-results-summary-component.vercel.app/)
 
 ## My process
 
@@ -34,7 +34,9 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Ordered and Unordered list
+- Tailwind CSS framework
+- Gradient Color
+- Responsive
 
 ### What I learned
 
