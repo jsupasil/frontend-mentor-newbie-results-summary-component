@@ -31,11 +31,16 @@
               orangeyYellow: "hsl(39, 100%, 56%)",
               greenTeal: "hsl(166, 100%, 37%)",
               cobaltBlue: "hsl(234, 85%, 45%)",
+              lightRedBG: "hsla(0, 100%, 67%,0.05)",
+              orangeyYellowBG: "hsla(39, 100%, 56%,0.05)",
+              greenTealBG: "hsla(166, 100%, 37%,0.05)",
+              cobaltBlueBG: "hsla(234, 85%, 45%,0.05)",
               lightSlateBlue: "hsl(252, 100%, 67%)",
               lightRoyalBlue: "hsl(241, 81%, 54%)",
               violetBlue: "hsla(256, 72%, 46%, 1)",
               persianBlue: "hsla(241, 72%, 46%, 0)",
               white: "hsl(0, 0%, 100%)",
+              whiteBG: "hsla(0, 0%, 100%,0.95)",
               paleBlue: "hsl(221, 100%, 96%)",
               lightLavender: "hsl(241, 100%, 89%)",
               darkGrayBlue: "hsl(224, 30%, 27%)",
@@ -58,56 +63,115 @@
     </style>
   </head>
   <body>
-    <main>
-      <div class="card">
-        <div class="result-overall">
-          <h1>Your Result</h1>
-          <div class="overall-score-circle">
-            <p>76</p>
-            <p>of 100</p>
+    <main
+      class="font-hankenGrotesk bg-paleBlue flex justify-center items-center sm:h-screen"
+    >
+      <div
+        class="card w-[375px] h-[809px] bg-whiteBG sm:flex sm:w-[736px] sm:h-[512px] sm:rounded-[32px]"
+      >
+        <div
+          class="result-overall bg-gradient-to-t from-lightRoyalBlue to-lightSlateBlue w-full h-[356px] rounded-b-[32px] flex flex-col items-center pt-[24px] sm:w-[50%] sm:h-full sm:rounded-[32px] sm:pt-[38px]"
+        >
+          <h1
+            class="text-[18px] text-lightLavender font-bold mb-[24px] leading-[23.45px] sm:text-[24px] sm:leading-[31.27px] sm:mb-[30px]"
+          >
+            Your Result
+          </h1>
+          <div
+            class="overall-score-circle bg-gradient-to-t from-persianBlue to-violetBlue w-[140px] h-[140px] rounded-full flex flex-col justify-center mb-[24px] sm:mb-[28px] sm:w-[200px] sm:h-[200px]"
+          >
+            <p
+              class="text-[56px] text-white text-center font-extrabold leading-[72px] mb-[9px] sm:text-[72px] sm:mb-[4px]"
+            >
+              76
+            </p>
+            <p
+              class="text-[16px] text-lightLavender text-center leading-[20.85px] opacity-[51.68%] sm:text-[18px] sm:leading-[23.45px]"
+            >
+              of 100
+            </p>
           </div>
-          <h2 class="result-level">Great</h2>
-          <p class="result-context">
+          <h2
+            class="result-level text-[24px] text-white text-center font-bold leading-[31.27px] mb-[8px] sm:text-[32px] sm:leading-[41.7px] sm:mb-[14px]"
+          >
+            Great
+          </h2>
+          <p
+            class="result-context text-[16px] text-lightLavender text-center font-medium leading-[20.85px] w-[260px] sm:text-[18px] sm:leading-[23.45px]"
+          >
             You scored higher than 65% of the people who have taken these tests.
           </p>
         </div>
-        <div class="result-summary">
-          <h3>Summary</h3>
-          <ul class="result-bar">
-            <il class="reaction">
-              <div>
+        <div
+          class="result-summary px-[30px] pt-[24px] text-darkGrayBlue sm:pt-[42px] sm:px-[30px] sm:w-[50%]"
+        >
+          <h3
+            class="text-[18px] leading-[23.45px] font-bold sm:text-[24px] sm:leading-[31.27px]"
+          >
+            Summary
+          </h3>
+          <ul
+            class="result-bar mt-[24px] flex flex-col gap-[16px] bg-whiteBG text-[16px] font-medium leading-[20.85px] sm:mt-[28px] sm:text-[18px] sm:leading-[23.45px]"
+          >
+            <il
+              class="reaction flex justify-between items-center p-[16px] rounded-[12px] bg-lightRedBG box-border h-[56px]"
+            >
+              <div class="flex items-center gap-[12px]">
                 <img
                   src="./assets/images/icon-reaction.svg"
                   alt="reaction icon"
+                  class="w-[20px] h-[20px]"
                 />
-                <p>Reaction</p>
+                <p class="text-lightRed">Reaction</p>
               </div>
-              <p>80 / 100</p>
+              <p class="font-bold">80<span class="opacity-50"> / 100 </span></p>
             </il>
-            <il class="memory">
-              <div>
-                <img src="./assets/images/icon-memory.svg" alt="memory icon" />
-                <p>Memory</p>
+            <il
+              class="memory flex justify-between items-center p-[16px] rounded-[12px] bg-orangeyYellowBG box-border h-[56px]"
+            >
+              <div class="flex items-center gap-[12px]">
+                <img
+                  src="./assets/images/icon-memory.svg"
+                  alt="memory icon"
+                  class="w-[20px] h-[20px]"
+                />
+                <p class="text-orangeyYellow">Memory</p>
               </div>
-              <p>92 / 100</p>
+              <p class="font-bold">92<span class="opacity-50"> / 100 </span></p>
             </il>
-            <il class="verbal">
-              <div>
-                <img src="./assets/images/icon-verbal.svg" alt="verbal icon" />
-                <p>Memory</p>
+            <il
+              class="verbal flex justify-between items-center p-[16px] rounded-[12px] bg-greenTealBG box-border h-[56px]"
+            >
+              <div class="flex items-center gap-[12px]">
+                <img
+                  src="./assets/images/icon-verbal.svg"
+                  alt="verbal icon"
+                  class="w-[20px] h-[20px]"
+                />
+                <p class="text-greenTeal">Verbal</p>
               </div>
-              <p>61 / 100</p>
+              <p class="font-bold">61<span class="opacity-50"> / 100 </span></p>
             </il>
-            <il class="visual">
-              <div>
-                <img src="./assets/images/icon-verbal.svg" alt="visual icon" />
-                <p>Visual</p>
+            <il
+              class="visual flex justify-between items-center p-[16px] rounded-[12px] bg-cobaltBlueBG box-border h-[56px]"
+            >
+              <div class="flex items-center gap-[12px]">
+                <img
+                  src="./assets/images/icon-visual.svg"
+                  alt="visual icon"
+                  class="w-[20px] h-[20px]"
+                />
+                <p class="text-cobaltBlue">Visual</p>
               </div>
-              <p>72 / 100</p>
+              <p class="font-bold">72<span class="opacity-50"> / 100 </span></p>
             </il>
           </ul>
+          <button
+            class="button w-full mt-[24px] text-center text-white box-border h-[56px] bg-darkGrayBlue rounded-[128px] sm:mt-[41px] active:bg-gradient-to-t active:from-lightRoyalBlue active:to-lightSlateBlue"
+          >
+            Continue
+          </button>
         </div>
-        <button class="button">Continue</button>
       </div>
     </main>
 
@@ -115,7 +179,10 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by
+      <a href="https://www.frontendmentor.io/profile/jsupasil" target="_blank"
+        >Jirayu Supasil</a
+      >.
     </footer>
   </body>
 </html>
