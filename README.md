@@ -34,13 +34,13 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Tailwind CSS framework
 - Gradient Color
 - Responsive
+- [TailwindCSS](https://tailwindcss.com/) - Tailwind CSS framework
 
 ### What I learned
 
-I learned how to align bullet and marker of ordered and unordered list.
+I learned how to make gradient by using Tailwind
 
 ### Continued development
 
@@ -48,9 +48,7 @@ There is nothing need to improve yet.
 
 ### Useful resources
 
-- [CSS ::marker Selector by W3 school](https://www.w3schools.com/cssref/sel_marker.php) - This help me to edit color of marker in item list.
-
-- [CSS List by W3 school](https://www.w3schools.com/css/css_list.asp) - This also help me to understand more about CSS list.
+- [Gradient Color Stops - TailwindCSS](https://tailwindcss.com/docs/gradient-color-stops) - This help me create gradient color on background of element.
 
 ## Author
 
